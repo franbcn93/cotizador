@@ -116,17 +116,17 @@ export const Formulario = ({ guardarResumen, guardarCargando }) => {
       {error ? <Error>Todos los campos son obligatorios</Error> : null}
 
       <Campo>
-        <Label>Marca</Label>
+        <Label>Marca:</Label>
         <Select name="marca" value={marca} onChange={obtenerInformacion}>
           <option value="">-- Seleccione --</option>
           <option value="americano">Americano</option>
           <option value="europeo">Europeo</option>
-          <option value="asiatico">Asiatico</option>
+          <option value="asiatico">Asiático</option>
         </Select>
       </Campo>
 
       <Campo>
-        <Label>Año</Label>
+        <Label>Año:</Label>
         <Select name="year" value={year} onChange={obtenerInformacion}>
           <option value="">-- Seleccione --</option>
           <option value="2021">2021</option>
@@ -143,7 +143,7 @@ export const Formulario = ({ guardarResumen, guardarCargando }) => {
       </Campo>
 
       <Campo>
-        <Label>Plan</Label>
+        <Label>Plan: </Label>
         <InputRadio
           type="radio"
           name="plan"
